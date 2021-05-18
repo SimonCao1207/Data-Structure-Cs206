@@ -79,11 +79,6 @@ class PatternSearching():
 					i +=1
 		return -1
 
-
-
-
-
-
 ##############################################
 import sys
 from os import path
@@ -97,7 +92,7 @@ t = input().strip()
 p = input().strip()
 
 PM = PatternSearching(t, p)
-print("Failure function", PM.compute_kmp_fail())
+# print("Failure function", PM.compute_kmp_fail())
 
 start_time = time.time()
 print(f"Result find with BoyerMoore: {PM.BoyerMoore()}")
