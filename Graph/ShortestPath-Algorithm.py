@@ -45,7 +45,6 @@ class Graph(object):
 			uv = heapq.heappop(unvisitedQueue)
 			current = uv[1]
 			visited.append(current)
-			print(visited)
 			for nextPoint in self.AdjacencyList[current]:
 				if nextPoint in visited:
 					continue
