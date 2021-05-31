@@ -39,7 +39,7 @@ class Graph(object):
 		D[start] = 0
 		visited = []
 		prev = {}
-		unvisitedQueue = [(D[v], v) for v in self.nodes]
+		unvisitedQueue = [(D[v], v) for v in self.nodes] # priority queue contains unvisited node and its distance
 		heapq.heapify(unvisitedQueue)
 		while len(unvisitedQueue):
 			uv = heapq.heappop(unvisitedQueue)
@@ -54,6 +54,7 @@ class Graph(object):
 				if newDist <  D[nextPoint]:
 					D[nextPoint] = newDist
 					prev[nextPoint] = current
+
 			# Rebuild the heap
 			while len(unvisitedQueue):
 				heapq.heappop(unvisitedQueue)
