@@ -61,7 +61,7 @@ class Graph(object):
 			unvisitedQueue = [(D[v], v) for v in self.nodes if v not in visited]
 			heapq.heapify(unvisitedQueue)
 
-		if end is not None:
+		if end:
 			v = prev[end]	
 			path =[end]
 			while v != start:
