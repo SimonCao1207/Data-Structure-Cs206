@@ -3,12 +3,6 @@ import sys
 
 INF = sys.maxsize
 
-from os import path
-if(path.exists('input.txt')):
-    sys.stdin = open("input.txt","r")
-    sys.stdout = open("output.txt","w")
-
-
 class Graph(object):
 
 	def __init__(self, filename):
@@ -34,7 +28,6 @@ class Graph(object):
 		"""
 		Dijkstra algorithm
 		"""	
-		print("Dijkstra's shortest path: ")
 		D = {node: INF for node in self.nodes}
 		D[start] = 0
 		visited = []
@@ -78,9 +71,12 @@ class Graph(object):
 
 if __name__ == '__main__':
 
+	StartPoint = 'BWI'
+	EndPoint = 'LAX'
 	filename = 'input.txt'
 	A = Graph(filename)
-	A.shortestPath('BWI')
+	print(f"Dijkstra's shortest path between {StartPoint} and {EndPoint} is: ")
+	A.shortestPath(StartPoint, EndPoint)
 
 
 

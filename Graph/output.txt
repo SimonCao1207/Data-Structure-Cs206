@@ -1,1 +1,2 @@
-Dijkstra's shortest path: 
+Dijkstra's shortest path between BWI and LAX is: 
+BWI ->ORD ->DFW ->LAX -> stop
