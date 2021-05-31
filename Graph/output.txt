@@ -1,10 +1,1 @@
 Dijkstra's shortest path: 
-['BWI']
-['BWI', 'JFK']
-['BWI', 'JFK', 'PVD']
-['BWI', 'JFK', 'PVD', 'BOS']
-['BWI', 'JFK', 'PVD', 'BOS', 'ORD']
-['BWI', 'JFK', 'PVD', 'BOS', 'ORD', 'MIA']
-['BWI', 'JFK', 'PVD', 'BOS', 'ORD', 'MIA', 'DFW']
-['BWI', 'JFK', 'PVD', 'BOS', 'ORD', 'MIA', 'DFW', 'SFO']
-['BWI', 'JFK', 'PVD', 'BOS', 'ORD', 'MIA', 'DFW', 'SFO', 'LAX']

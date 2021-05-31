@@ -42,13 +42,16 @@ class Graph(object):
 		unvisitedQueue = [(D[v], v) for v in self.nodes] # priority queue contains unvisited node and its distance
 		heapq.heapify(unvisitedQueue)
 		while len(unvisitedQueue):
+
+			# Pull vertex u into the cloud
 			uv = heapq.heappop(unvisitedQueue)
 			current = uv[1]
 			visited.append(current)
+
+			# Relaxation procedure on adjacent edge
 			for nextPoint in self.AdjacencyList[current]:
 				if nextPoint in visited:
 					continue
-
 				newDist = D[current] + self.getWeight(current, nextPoint)
 
 				if newDist <  D[nextPoint]:
