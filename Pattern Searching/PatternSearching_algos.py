@@ -19,7 +19,7 @@ class PatternSearching():
 		k = m-1 # for scanning p. Can be seen as the first miss match
 		i = m-1 # for scanning t
 		
-		last = {} # Table for last occurence:
+		last = {} # Table for last occurence method
 		for k in range(m):
 				last[p[k]] = k
 
@@ -37,6 +37,12 @@ class PatternSearching():
 				k = m-1
 		return -1
 
+	def BoyerMoore_with_goodSuffix(self):
+		"""
+		Find the smallest shift that matches a prefix of the pattern to a suffix of t in the text
+		If there's no such match, shift the pattern by m (the length of P)
+		"""
+		
 
 	def compute_kmp_fail(self): 
 		"""
